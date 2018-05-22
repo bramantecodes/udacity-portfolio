@@ -1,0 +1,136 @@
+.top-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.middle-box {
+  display: flex;
+  text-align: justify;
+  width: 100%;
+  flex-wrap:wrap;
+}
+
+/* for screens that are less than 640 pixels wide. */
+@media only screen and (max-width:639px) {
+  .middle-box {
+      min-height: 100vh;
+      background-image: url("Backlit_keyboard 320x180.jpg");
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+}
+
+/* For screen width 640px and larger: */
+@media only screen and (min-width: 640px) {
+    .middle-box {
+        background-image: url("Backlit_keyboard 640x360.jpg");
+        width: 100%;
+        height: 360px;
+          }
+      }
+
+/* For screen width 800px and larger: */
+  @media only screen and (min-width: 800px) {
+    .middle-box {
+        background-image: url("Backlit_keyboard 800x450.jpg");
+        width: 100%;
+        height: 450px;
+    }
+}
+
+/* For screens width 1024px and larger: */
+  @media only screen and (min-width: 1024px) {
+    .middle-box {
+        background-image: url("Backlit_keyboard 1024x575.jpg");
+        width:100%;
+        height:575px;
+    }
+}
+
+/* For screen width 1280px and larger: */
+  @media only screen and (min-width: 1280px) {
+    .middle-box {
+        background-image: url("Backlit_keyboard 1280x720.jpg");
+        width: 100%;
+        height:720px;
+    }
+}
+
+/* For screen width larger than 4356px: */
+  @media only screen and (min-width: 4357px) {
+    .middle-box {
+        background-image: url("'Backlit_keyboard 4357x2451");
+        width: 100%;
+        height: 2451px;
+    }
+}
+
+/* Set to min-height = to 100% of viewport height so this box would not overflow into the footer.  */
+.bottom-box {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+/* Give more than one font option for screen */
+/* h1 is for heading at the top of page */
+h1 {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* h2 is for the names of the projects at the bottom of the page */
+h2 {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* h3 is for the heading "Featured Work" */
+h3 {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* h4 is for sub-heading at the top under the name */
+h4 {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top:2px;
+}
+
+p {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align:center;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  /* Set the hr color */
+  color: #7d97ad; /* old IE */
+  background-color: #7d97ad; /* Modern Browsers */
+}
+
+footer {
+  margin-top: 1px;
+  text-align: center;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
